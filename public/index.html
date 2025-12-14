@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.146.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>WeiXuan&#39;s R&amp;D Lab</title>
+
+<meta name="description" content="WeiXuan&#39;s Personal R&amp;D Lab - EDA Optimization, AI Algorithms, and FPGA Acceleration.">
+<meta name="author" content="WeiXuan You">
+<link rel="canonical" href="http://localhost:1313/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.6db280f2f89c8530adb3f0aa814a382d8cd847035ce1cabfab1650459d5b92ca.css" integrity="sha256-bbKA8vichTCts/CqgUo4LYzYRwNc4cq/qxZQRZ1bkso=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml" title="rss">
+<link rel="alternate" type="application/json" href="http://localhost:1313/index.json" title="json">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="http://localhost:1313/">
+  <meta property="og:site_name" content="WeiXuan&#39;s R&D Lab">
+  <meta property="og:title" content="WeiXuan&#39;s R&D Lab">
+  <meta property="og:description" content="WeiXuan&#39;s Personal R&amp;D Lab - EDA Optimization, AI Algorithms, and FPGA Acceleration.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="WeiXuan&#39;s R&amp;D Lab">
+<meta name="twitter:description" content="WeiXuan&#39;s Personal R&amp;D Lab - EDA Optimization, AI Algorithms, and FPGA Acceleration.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "WeiXuan's R\u0026D Lab",
+  "url": "http://localhost:1313/",
+  "description": "WeiXuan's Personal R\u0026D Lab - EDA Optimization, AI Algorithms, and FPGA Acceleration.",
+  "logo": "http://localhost:1313/favicon.ico",
+  "sameAs": [
+      "https://github.com/WeiXuanYou", "https://linkedin.com/in/your-id", "mailto:[email protected]", "/files/resume.pdf"
+  ]
+}
+</script>
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="WeiXuan&#39;s R&amp;D Lab (Alt + H)">WeiXuan&#39;s R&amp;D Lab</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/career/" title="🚀 Experience">
+                    <span>🚀 Experience</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/projects/" title="🔬 Research">
+                    <span>🔬 Research</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/posts/" title="🧪 Lab Notes">
+                    <span>🧪 Lab Notes</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/daily/" title="📅 Daily">
+                    <span>📅 Daily</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/files/resume.pdf" title="📄 CV">
+                    <span>📄 CV</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+
+<article class="first-entry home-info">
+    <header class="entry-header">
+        <h1>WeiXuan&rsquo;s R&amp;D Lab</h1>
+    </header>
+    <div class="entry-content">
+        <pre><code>    **Principal Investigator: WeiXuan You (游煒亘)**
+    
+    歡迎來到我的個人研發實驗室。
+    這裡致力於將 **AI 演算法 (RL/LLM)** 與 **EDA/FPGA 硬體加速** 結合，探索效能優化的極限。
+    
+    &gt; **Current Focus:**
+    &gt; * ⚡ **EDA Optimization**: Power/Ground Routing Algorithms.
+    &gt; * 🤖 **Edge AI**: FPGA Deployment (Vitis) &amp; Model Quantization.
+    &gt; * 🧪 **Lab Status**: 🟢 Online | Conducting Experiments...
+</code></pre>
+
+    </div>
+    <footer class="entry-footer">
+        <div class="social-icons" >
+    <a href="https://github.com/WeiXuanYou" target="_blank" rel="noopener noreferrer me"
+        title="Github">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+    </a>
+    <a href="https://linkedin.com/in/your-id" target="_blank" rel="noopener noreferrer me"
+        title="Linkedin">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+    <rect x="2" y="9" width="4" height="12"></rect>
+    <circle cx="4" cy="4" r="2"></circle>
+</svg>
+    </a>
+    <a href="mailto:[email%c2%a0protected]" target="_blank" rel="noopener noreferrer me"
+        title="Email">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 21" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+    <polyline points="22,6 12,13 2,6"></polyline>
+</svg>
+    </a>
+    <a href="/files/resume.pdf" target="_blank" rel="noopener noreferrer me"
+        title="Cv">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M4 4v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8.342a2 2 0 0 0-.602-1.43l-4.44-4.342A2 2 0 0 0 13.56 2H6a2 2 0 0 0-2 2z" />
+    <path d="M9 13h6" />
+    <path d="M9 17h3" />
+    <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+</svg>
+    </a>
+</div>
+
+    </footer>
+</article>
+
+<div class="home-section news-section">
+    <h2 class="section-title">⚡ Latest Updates</h2>
+    <ul class="news-list">
+        
+        
+        <li>
+            <span class="news-date">[2025-12-14]</span>
+            <a href="http://localhost:1313/posts/news-2025-keynote/"> [Invited Talk] AI Optimizations in EDA</a>
+        </li>
+        
+        <li>
+            <span class="news-date">[2025-12-14]</span>
+            <a href="http://localhost:1313/posts/rtree-optimization/">Optimizing R-Tree for EDA Routing</a>
+        </li>
+        
+        <li>
+            <span class="news-date">[0001-01-01]</span>
+            <a href="http://localhost:1313/posts/2025-eda-learning/"></a>
+        </li>
+        
+        <li>
+            <span class="news-date">[0001-01-01]</span>
+            <a href="http://localhost:1313/posts/my-workspace-setup/"></a>
+        </li>
+        
+    </ul>
+</div>
+
+<div class="home-section projects-section">
+    <h2 class="section-title">🔬 Featured Research</h2>
+    <div class="home-project-grid">
+        
+        
+            <article class="post-entry home-project-card">
+                
+                <figure class="entry-cover">
+                    <img src="http://localhost:1313/images/demo.jpg" alt="FPGA Project Demo" loading="lazy">
+                </figure>
+                
+                <header class="entry-header">
+                    <h2>FPGA-Based Object Detection Accelerator</h2>
+                </header>
+                <section class="entry-content">
+                    <p>利用 Vitis AI 加速 YOLO 模型，推論速度提升 800%。</p>
+                </section>
+                <a class="entry-link" aria-label="post link to FPGA-Based Object Detection Accelerator" href="http://localhost:1313/projects/fpga-accelerator/"></a>
+            </article>
+        
+            <article class="post-entry home-project-card">
+                
+                <figure class="entry-cover">
+                    <img src="http://localhost:1313/images/eda-demo.png" alt="RL-Based Power Routing" loading="lazy">
+                </figure>
+                
+                <header class="entry-header">
+                    <h2>RL-Based Power Routing</h2>
+                </header>
+                <section class="entry-content">
+                    <p>Using Reinforcement Learning to solve IR-Drop issues in 3nm process.</p>
+                </section>
+                <a class="entry-link" aria-label="post link to RL-Based Power Routing" href="http://localhost:1313/projects/eda-router/"></a>
+            </article>
+        
+    </div>
+    
+    <div class="more-projects-btn">
+        <a href="/projects/" class="tech-button">View All Projects →</a>
+    </div>
+</div>
+
+
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">WeiXuan&#39;s R&amp;D Lab</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

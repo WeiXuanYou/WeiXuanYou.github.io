@@ -1,0 +1,178 @@
+/* assets/css/extended/custom.css - "Align Left" Tech Version */
+
+/* --- 0. 全域配色定義 (High Contrast Tech Theme) --- */
+:root {
+    --gap: 30px;
+    --content-gap: 30px;
+    --nav-width: 1024px;
+    --main-width: 1024px;
+    --primary: #00f3ff;       /* 霓虹青 */
+    --text-main: #f8fafc;     /* 標題白 */
+    --text-body: #e2e8f0;     /* 內文亮銀灰 */
+    --text-dim: #94a3b8;      /* 次要資訊暗灰 */
+    --bg-color: #0a0a0a;      /* 深黑背景 */
+    --entry: #18181b;         /* 卡片背景 Zinc-900 */
+    --border: #333333;
+    --code-bg: #111111;
+}
+
+/* --- 1. 全域基礎設定 --- */
+body {
+    background-color: var(--bg-color);
+    background-image: radial-gradient(#222 1px, transparent 1px);
+    background-size: 40px 40px;
+    color: var(--text-body);
+}
+
+/* 強制所有內容靠左對齊，閱讀性最佳 */
+.main, .post-content, .entry-content, .home-info .entry-content, p {
+    text-align: left !important;
+}
+
+.post-content, .entry-content, .home-info .entry-content {
+    color: var(--text-body) !important;
+    font-size: 16px; 
+    line-height: 1.7;
+}
+
+.post-content li, .post-content ul, .post-content ol { color: var(--text-body); }
+strong { color: #ffffff; font-weight: 700; }
+a { color: var(--primary); transition: color 0.2s; }
+a:hover { color: #fff; text-shadow: 0 0 5px var(--primary); }
+
+/* 主容器置中 (控制面板置中) */
+.main { 
+    margin: 0 auto; 
+    max-width: var(--main-width); 
+    padding: 0 20px; 
+}
+
+/* --- 2. 首頁 Hero (自我介紹) - 改為靠左 --- */
+.home-info { 
+    text-align: left; /* 關鍵修改 */
+    margin-bottom: 60px; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* 確保 Flex 元素靠左 */
+}
+.home-info .entry-content { 
+    margin: 0; /* 移除原本的 margin: 0 auto */
+    max-width: 100%; /* 讓文字可以延伸 */
+}
+.home-info h1 {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 20px;
+    color: var(--text-main);
+}
+
+/* --- 3. 首頁區塊標題 - 改為靠左並加上裝飾 --- */
+.section-title {
+    text-align: left; /* 靠左 */
+    color: var(--primary);
+    margin: 40px 0 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 1.4rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* 標題右側的科技感線條 */
+.section-title::after { 
+    content: ''; 
+    display: block; 
+    flex-grow: 1; /* 自動填滿剩餘空間 */
+    height: 1px;
+    background: linear-gradient(90deg, var(--primary), transparent); /* 漸層線 */
+    margin-left: 20px;
+    opacity: 0.5;
+}
+
+.home-section { margin-bottom: 80px; } 
+
+/* --- 4. 最新消息列表 (Latest News) --- */
+.news-list {
+    list-style: none; padding: 0; margin: 0; /* 移除 auto margin */
+    max-width: 100%;
+}
+.news-list li {
+    margin-bottom: 15px; padding-left: 20px;
+    border-left: 3px solid var(--border);
+    transition: all 0.3s ease;
+}
+.news-list li:hover { border-left-color: var(--primary); padding-left: 25px; }
+.news-date {
+    color: var(--text-dim); font-family: monospace; margin-right: 15px; font-size: 0.9rem;
+}
+.news-list a { text-decoration: none; font-weight: 500; }
+
+/* --- 5. 專案卡片 (Nx2 Grid) - 內容靠左 --- */
+/* Grid 容器 */
+.home-project-grid, body[class*="projects"] .list {
+    display: grid; grid-template-columns: 1fr; gap: 30px; padding: 20px 0;
+}
+@media (min-width: 768px) {
+    .home-project-grid, body[class*="projects"] .list { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* 卡片本體 */
+.home-project-card, body[class*="projects"] .post-entry {
+    background: var(--entry); border: 1px solid var(--border);
+    border-radius: 8px; transition: all 0.3s ease;
+    height: 100%; display: flex; flex-direction: column; overflow: hidden;
+    margin-bottom: 0; 
+}
+
+/* 圖片區域 */
+.home-project-card .entry-cover, body[class*="projects"] .entry-cover {
+    height: 220px; 
+    border-bottom: 1px solid var(--border); margin: 0; overflow: hidden;
+}
+.home-project-card img, body[class*="projects"] .entry-cover img {
+    width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;
+}
+
+/* 卡片文字區域 - 關鍵修改：全部靠左 */
+.home-project-card .entry-header, body[class*="projects"] .entry-header { 
+    text-align: left; /* 靠左 */
+    padding: 20px 20px 10px; 
+}
+.home-project-card h2, body[class*="projects"] h2 { 
+    font-size: 1.3rem; color: var(--text-main); margin-bottom: 10px;
+}
+.home-project-card .entry-content, body[class*="projects"] .entry-content {
+    text-align: left; /* 靠左 */
+    padding: 0 20px 25px; 
+    color: var(--text-dim); font-size: 0.95rem;
+    display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+}
+
+/* Hover 特效 */
+.home-project-card:hover, body[class*="projects"] .post-entry:hover {
+    transform: translateY(-5px); border-color: var(--primary);
+    box-shadow: 0 4px 20px rgba(0, 243, 255, 0.15);
+}
+.home-project-card:hover img, body[class*="projects"] .post-entry:hover img {
+    transform: scale(1.05);
+}
+
+/* 按鈕改為靠左或置中? 通常按鈕置中比較好看，但如果要這一致靠左也可以 */
+.more-projects-btn { text-align: left; margin-top: 30px; } /* 改為靠左 */
+.tech-button {
+    display: inline-block; padding: 10px 25px;
+    border: 1px solid var(--primary); color: var(--primary);
+    text-decoration: none; font-family: monospace; transition: all 0.3s ease;
+    background: rgba(0, 243, 255, 0.05);
+}
+.tech-button:hover {
+    background: var(--primary); color: #000; box-shadow: 0 0 15px var(--primary);
+}
+
+/* --- 6. 選單與頁尾 --- */
+.header { margin: 0 auto; max-width: var(--nav-width); border-bottom: 1px solid rgba(255,255,255,0.05); }
+/* 修正選單靠左問題：確保導航列內容也是置中的 */
+.nav { max-width: var(--nav-width); margin: 0 auto; }
+.menu li a { color: var(--text-body); font-weight: 500; }
+.menu li a:hover { color: var(--primary); }

@@ -1,0 +1,49 @@
+{{ define "main" }}
+
+{{ partial "home_info.html" . }}
+
+<div class="home-section news-section">
+    <h2 class="section-title">⚡ Latest Updates</h2>
+    <ul class="news-list">
+        {{ $news := where site.RegularPages "Section" "in" (slice "posts" "daily") | first 5 }}
+        {{ range $news }}
+        <li>
+            <span class="news-date">[{{ .Date.Format "2006-01-02" }}]</span>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </li>
+        {{ else }}
+        <li><span class="news-date">[Info]</span> No updates yet. Check back soon!</li>
+        {{ end }}
+    </ul>
+</div>
+
+<div class="home-section projects-section">
+    <h2 class="section-title">🔬 Featured Research</h2>
+    <div class="home-project-grid">
+        {{ $projects := where site.RegularPages "Section" "projects" | first 4 }}
+        {{ range $projects }}
+            <article class="post-entry home-project-card">
+                {{ if .Params.cover.image }}
+                <figure class="entry-cover">
+                    <img src="{{ .Params.cover.image | absURL }}" alt="{{ .Params.cover.alt | default .Title }}" loading="lazy">
+                </figure>
+                {{ end }}
+                <header class="entry-header">
+                    <h2>{{ .Title }}</h2>
+                </header>
+                <section class="entry-content">
+                    <p>{{ .Summary | truncate 120 }}</p>
+                </section>
+                <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+            </article>
+        {{ else }}
+        <p style="text-align: center; color: var(--text-dim);">No projects showcased yet.</p>
+        {{ end }}
+    </div>
+    
+    <div class="more-projects-btn">
+        <a href="/projects/" class="tech-button">View All Projects →</a>
+    </div>
+</div>
+
+{{ end }}
