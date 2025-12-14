@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Talk on WeiXuan's R&amp;D Lab</title><link>https://weixuanyou.github.io/tags/talk/</link><description>Recent content in Talk on WeiXuan's R&amp;D Lab</description><generator>Hugo -- 0.146.0</generator><language>en-us</language><lastBuildDate>Sun, 14 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://weixuanyou.github.io/tags/talk/index.xml" rel="self" type="application/rss+xml"/><item><title> [Invited Talk] AI Optimizations in EDA</title><link>https://weixuanyou.github.io/posts/news-2025-keynote/</link><pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate><guid>https://weixuanyou.github.io/posts/news-2025-keynote/</guid><description>I will be giving a talk at COSCUP 2025 about how RL transforms routing.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Talk on WeiXuan&#39;s R&amp;D Lab</title>
+    <link>http://localhost:1313/tags/talk/</link>
+    <description>Recent content in Talk on WeiXuan&#39;s R&amp;D Lab</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 14 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/talk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title> [Invited Talk] AI Optimizations in EDA</title>
+      <link>http://localhost:1313/posts/news-2025-keynote/</link>
+      <pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/news-2025-keynote/</guid>
+      <description>I will be giving a talk at COSCUP 2025 about how RL transforms routing.</description>
+    </item>
+  </channel>
+</rss>
