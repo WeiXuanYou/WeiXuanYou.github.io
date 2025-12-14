@@ -1,0 +1,113 @@
+{{ define "main" }}
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title">{{ .Title }}</h1>
+  </header>
+  
+  <div class="post-content">
+    <div align="right" style="margin-bottom: 20px;">
+        <a href="/files/CV.pdf" class="tech-button" target="_blank">📄 Download PDF</a>
+    </div>
+
+    <style>
+    .resume-section { margin-bottom: 30px; text-align: left; }
+    .resume-header { border-bottom: 2px solid var(--primary); padding-bottom: 10px; margin-bottom: 20px; text-align: left; }
+    .resume-title { font-size: 1.8rem; font-weight: bold; color: var(--text-main); margin-bottom: 5px; text-align: left; }
+    .resume-subtitle { font-size: 1.1rem; color: var(--primary); font-weight: 500; text-align: left; }
+    .resume-info { font-size: 0.95rem; color: var(--text-dim); margin-bottom: 20px; text-align: left; }
+    
+    .job-header { display: flex; justify-content: space-between; align-items: baseline; margin-top: 20px; margin-bottom: 5px; }
+    .job-title { font-weight: bold; font-size: 1.1rem; color: #fff; }
+    .job-company { color: var(--primary); font-weight: bold; }
+    .job-date { color: var(--text-dim); font-family: monospace; font-size: 0.9rem; white-space: nowrap; }
+    
+    .job-details { margin-left: 0; padding-left: 20px; list-style-type: disc; color: var(--text-body); text-align: left; }
+    .job-details li { margin-bottom: 6px; }
+    
+    /* 手機版適應 */
+    @media (max-width: 600px) {
+        .job-header { flex-direction: column; }
+        .job-date { margin-top: 2px; }
+    }
+    </style>
+
+    <div class="resume-section">
+        <div class="resume-title">WeiXuan You (游煒亘)</div>
+        <div class="resume-subtitle">Senior Software Engineer | EDA & AI Optimization</div>
+        <div class="resume-info">
+            📍 Taipei, Taiwan | 📧 [email protected] | 🔗 <a href="[https://weixuanyou.github.io](https://weixuanyou.github.io)">Portfolio / Blog</a> | 🐙 <a href="[https://github.com/WeiXuanYou](https://github.com/WeiXuanYou)">GitHub</a>
+        </div>
+        <p style="text-align: left;">
+            Senior Engineer blending <strong>Advanced Algorithms (RL/Graph Theory)</strong> with <strong>Hardware Acceleration (FPGA/ASIC)</strong>. Proven track record in developing automated routing engines from scratch and optimizing deep learning models for edge deployment. Passionate about applying Generative AI to revolutionize chip design workflows.
+        </p>
+    </div>
+
+    <div class="resume-section">
+        <div class="resume-header">EXPERIENCE</div>
+
+        <div class="job-header">
+            <div><span class="job-title">Senior Software Engineer</span> <span class="job-company">@ CHPT</span></div>
+            <span class="job-date">2025 – Present</span>
+        </div>
+        <ul class="job-details">
+            <li><strong>Automated Routing Engine Development:</strong> Architected a C++ based power/ground routing engine utilizing <strong>Steiner Tree</strong> and <strong>A* Search algorithms</strong>, reducing manual layout time by <strong>40%</strong> for complex multi-layer PCBs.</li>
+            <li><strong>AI-Assisted Optimization:</strong> Integrated <strong>Reinforcement Learning (RL)</strong> agents to predict routing congestion hotspots, improving the first-pass success rate of signal integrity simulation by <strong>25%</strong>.</li>
+            <li><strong>Legacy Code Refactoring:</strong> Led the refactoring of legacy Python automation scripts into a modular C++ architecture, improving execution speed by <strong>10x</strong> and enabling CI/CD integration.</li>
+        </ul>
+
+        <div class="job-header">
+            <div><span class="job-title">Master's Researcher (Rank 1/129)</span> <span class="job-company">@ NTUT</span></div>
+            <span class="job-date">2021 – 2023</span>
+        </div>
+        <ul class="job-details">
+            <li><strong>Edge AI Acceleration (FPGA):</strong> Deployed YOLOv4 models on <strong>Xilinx PYNQ-Z2</strong> using <strong>Vitis AI</strong>. Implemented INT8 quantization and channel pruning, achieving an <strong>800% inference speedup</strong> compared to ARM CPU baseline.</li>
+            <li><strong>Generative AI Research:</strong> Developed a Voice Conversion system using VAE-GAN architecture. Built a real-time PyQt inference interface for demonstration.</li>
+        </ul>
+
+        <div class="job-header">
+            <div><span class="job-title">BIOS Firmware Intern</span> <span class="job-company">@ Compal Electronics</span></div>
+            <span class="job-date">2020</span>
+        </div>
+        <ul class="job-details">
+            <li><strong>Test Automation:</strong> Developed a Python-based automated testing tool combining <strong>OCR</strong> to validate BIOS boot sequences, reducing human verification effort by <strong>90%</strong>.</li>
+        </ul>
+    </div>
+
+    <div class="resume-section">
+        <div class="resume-header">SELECTED PROJECTS</div>
+        
+        <div class="job-header">
+            <div><span class="job-title">WeiXuan's R&D Lab (Personal Tech Blog)</span></div>
+            <span class="job-date">2025 – Present</span>
+        </div>
+        <ul class="job-details">
+            <li>Built a fully automated CI/CD personal website using <strong>Hugo</strong> and <strong>GitHub Actions</strong>.</li>
+            <li>Regularly publishing technical deep-dives on <strong>FPGA deployment workflows</strong> and <strong>Algorithm optimization techniques</strong>.</li>
+        </ul>
+    </div>
+
+    <div class="resume-section">
+        <div class="resume-header">TECHNICAL SKILLS</div>
+        <ul class="job-details" style="list-style-type: none; padding-left: 0;">
+            <li><strong>Languages:</strong> C/C++ (STL, Modern C++), Python, Verilog/SystemVerilog, Bash.</li>
+            <li><strong>AI & Data:</strong> PyTorch, TensorFlow, OpenCV, Reinforcement Learning, LLM (RAG).</li>
+            <li><strong>Hardware & EDA:</strong> Xilinx Vitis/Vivado, FPGA (Zynq), HLS, KiCad.</li>
+            <li><strong>Tools:</strong> Git, Docker, Linux, CI/CD (GitHub Actions), CMake.</li>
+        </ul>
+    </div>
+
+    <div class="resume-section">
+        <div class="resume-header">EDUCATION</div>
+        <div class="job-header">
+            <div><span class="job-title">M.S. in Electronic Engineering</span> <span class="job-company">@ National Taipei University of Technology</span></div>
+            <span class="job-date">2021 – 2023</span>
+        </div>
+        <ul class="job-details">
+            <li><strong>GPA:</strong> 4.0/4.0 | <strong>Rank:</strong> 1/129 (Academic Excellence Award)</li>
+            <li><strong>Thesis:</strong> Optimization of Deep Learning Models on Embedded FPGA Systems.</li>
+        </ul>
+    </div>
+
+  </div>
+</article>
+{{ end }}

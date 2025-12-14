@@ -15,5 +15,12 @@
       <guid>http://localhost:1313/projects/fpga-accelerator/</guid>
       <description>利用 Vitis AI 加速 YOLO 模型，推論速度提升 800%。</description>
     </item>
+    <item>
+      <title>Vivado Synthesis Timing Violation... Again</title>
+      <link>http://localhost:1313/daily/2025-12-10-vivado-synthesis/</link>
+      <pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/daily/2025-12-10-vivado-synthesis/</guid>
+      <description>Negative Slack -0.4ns. The joy of hardware design.</description>
+    </item>
   </channel>
 </rss>

@@ -23,11 +23,39 @@
       <description>I will be giving a talk at COSCUP 2025 about how RL transforms routing.</description>
     </item>
     <item>
+      <title>[DevLog] Tuning A* Heuristic for Power Routing</title>
+      <link>http://localhost:1313/daily/2025-12-14-astar-heuristic/</link>
+      <pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/daily/2025-12-14-astar-heuristic/</guid>
+      <description>Admissible heuristic is safe, but too slow. Trying to over-estimate today.</description>
+    </item>
+    <item>
       <title>Optimizing R-Tree for EDA Routing</title>
       <link>http://localhost:1313/posts/rtree-optimization/</link>
       <pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/rtree-optimization/</guid>
       <description>Detailed analysis of R-Tree performance in Python vs C++.</description>
+    </item>
+    <item>
+      <title>Testing Gemma 2 on RTX 3080</title>
+      <link>http://localhost:1313/daily/2025-12-12-local-llm/</link>
+      <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/daily/2025-12-12-local-llm/</guid>
+      <description>VRAM is crying. I need that 5090.</description>
+    </item>
+    <item>
+      <title>Vivado Synthesis Timing Violation... Again</title>
+      <link>http://localhost:1313/daily/2025-12-10-vivado-synthesis/</link>
+      <pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/daily/2025-12-10-vivado-synthesis/</guid>
+      <description>Negative Slack -0.4ns. The joy of hardware design.</description>
+    </item>
+    <item>
+      <title>Sunday Relax: Minecraft Create Mod</title>
+      <link>http://localhost:1313/daily/2025-12-08-minecraft-create/</link>
+      <pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/daily/2025-12-08-minecraft-create/</guid>
+      <description>Building a fully automated andesite alloy factory.</description>
     </item>
     <item>
       <title></title>
@@ -56,6 +84,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/career/</guid>
       <description>My journey from Top 1% Master&amp;rsquo;s Researcher to Senior EDA Engineer.</description>
+    </item>
+    <item>
+      <title>Resume</title>
+      <link>http://localhost:1313/cv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/cv/</guid>
+      <description>Senior Software Engineer specialized in EDA &amp;amp; AI Optimization.</description>
     </item>
     <item>
       <title>RL-Based Power Routing</title>

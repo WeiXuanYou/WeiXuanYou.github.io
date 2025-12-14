@@ -108,5 +108,14 @@ buildExpired = false
     [[menu.main]]
         identifier = "cv"
         name = "📄 CV"
-        url = "/files/resume.pdf"
+        url = "/cv/"
         weight = 50
+
+    # --- 新增這個 ---
+    [[menu.main]]
+        identifier = "about"
+        name = "👨‍💻 About"
+        url = "/about/"
+        weight = 60  # 數字最小，會排在最左邊 (比 Lab Notes 還前面)
+    
+

@@ -1,11 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Daily Log on WeiXuan&#39;s R&amp;D Lab</title>
+    <title>📅 Lab Daily Log on WeiXuan&#39;s R&amp;D Lab</title>
     <link>http://localhost:1313/daily/</link>
-    <description>Recent content in Daily Log on WeiXuan&#39;s R&amp;D Lab</description>
+    <description>Recent content in 📅 Lab Daily Log on WeiXuan&#39;s R&amp;D Lab</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>en-us</language>
+    <lastBuildDate>Sun, 14 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/daily/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[DevLog] Tuning A* Heuristic for Power Routing</title>
+      <link>http://localhost:1313/daily/2025-12-14-astar-heuristic/</link>
+      <pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/daily/2025-12-14-astar-heuristic/</guid>
+      <description>Admissible heuristic is safe, but too slow. Trying to over-estimate today.</description>
+    </item>
+    <item>
+      <title>Testing Gemma 2 on RTX 3080</title>
+      <link>http://localhost:1313/daily/2025-12-12-local-llm/</link>
+      <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/daily/2025-12-12-local-llm/</guid>
+      <description>VRAM is crying. I need that 5090.</description>
+    </item>
+    <item>
+      <title>Vivado Synthesis Timing Violation... Again</title>
+      <link>http://localhost:1313/daily/2025-12-10-vivado-synthesis/</link>
+      <pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/daily/2025-12-10-vivado-synthesis/</guid>
+      <description>Negative Slack -0.4ns. The joy of hardware design.</description>
+    </item>
+    <item>
+      <title>Sunday Relax: Minecraft Create Mod</title>
+      <link>http://localhost:1313/daily/2025-12-08-minecraft-create/</link>
+      <pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/daily/2025-12-08-minecraft-create/</guid>
+      <description>Building a fully automated andesite alloy factory.</description>
+    </item>
   </channel>
 </rss>

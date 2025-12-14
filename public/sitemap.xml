@@ -8,6 +8,21 @@
     <loc>http://localhost:1313/posts/news-2025-keynote/</loc>
     <lastmod>2025-12-14T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/daily/2025-12-14-astar-heuristic/</loc>
+    <lastmod>2025-12-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/daily/</loc>
+    <lastmod>2025-12-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/algorithm/</loc>
+    <lastmod>2025-12-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/c&#43;&#43;/</loc>
+    <lastmod>2025-12-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/eda/</loc>
+    <lastmod>2025-12-14T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/edge-ai/</loc>
     <lastmod>2025-12-14T00:00:00+00:00</lastmod>
   </url><url>
@@ -38,6 +53,36 @@
     <loc>http://localhost:1313/</loc>
     <lastmod>2025-12-14T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/ai/</loc>
+    <lastmod>2025-12-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/hardware/</loc>
+    <lastmod>2025-12-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/llm/</loc>
+    <lastmod>2025-12-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/daily/2025-12-12-local-llm/</loc>
+    <lastmod>2025-12-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/debug/</loc>
+    <lastmod>2025-12-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/vivado/</loc>
+    <lastmod>2025-12-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/daily/2025-12-10-vivado-synthesis/</loc>
+    <lastmod>2025-12-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/gaming/</loc>
+    <lastmod>2025-12-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/life/</loc>
+    <lastmod>2025-12-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/daily/2025-12-08-minecraft-create/</loc>
+    <lastmod>2025-12-08T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/2025-eda-learning/</loc>
   </url><url>
     <loc>http://localhost:1313/posts/my-workspace-setup/</loc>
@@ -46,9 +91,9 @@
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/daily/</loc>
-  </url><url>
     <loc>http://localhost:1313/career/</loc>
+  </url><url>
+    <loc>http://localhost:1313/cv/</loc>
   </url><url>
     <loc>http://localhost:1313/projects/eda-router/</loc>
   </url><url>
