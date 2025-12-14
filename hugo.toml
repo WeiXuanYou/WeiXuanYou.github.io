@@ -1,0 +1,43 @@
+baseURL = "https://weixuanyou.github.io/"
+languageCode = "en-us"
+title = "WeiXuan You"
+theme = "PaperMod"
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[params]
+    env = "production"
+    description = "EDA & AI Optimization Engineer"
+    author = "WeiXuan You"
+    defaultTheme = "auto"
+
+    [params.profileMode]
+        enabled = true
+        title = "WeiXuan You"
+        subtitle = "Senior Software Engineer @ CHPT | EDA & AI Optimization"
+        
+        [[params.profileMode.buttons]]
+            name = "Projects"
+            url = "/projects"
+        [[params.profileMode.buttons]]
+            name = "Career"
+            url = "/career"
+
+    [[params.socialIcons]]
+        name = "github"
+        url = "https://github.com/WeiXuanYou"
+    
+[menu]
+    [[menu.main]]
+        identifier = "projects"
+        name = "Projects"
+        url = "/projects/"
+        weight = 10
+    [[menu.main]]
+        identifier = "career"
+        name = "Career"
+        url = "/career/"
+        weight = 20
