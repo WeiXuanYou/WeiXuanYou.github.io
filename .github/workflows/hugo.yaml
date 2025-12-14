@@ -4,7 +4,7 @@ name: Deploy Hugo site to Pages
 on:
   push:
     branches:
-      - main  # 確保這裡跟你的分支名稱一致
+      - main
 
 permissions:
   contents: read
@@ -24,7 +24,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.121.1
+      # 更新這裡的版本號以符合主題需求
+      HUGO_VERSION: 0.146.0
       HUGO_ENV: production
     steps:
       - name: Install Hugo CLI
