@@ -41,17 +41,15 @@ buildExpired = false
 
     [params.homeInfoParams]
         Title = "WeiXuan's R&D Lab"
-        Content = """
-        **Principal Investigator: WeiXuan You (游煒亘)**
-        
-        歡迎來到我的個人研發實驗室。
-        這裡致力於將 **AI 演算法 (RL/LLM)** 與 **EDA/FPGA 硬體加速** 結合，探索效能優化的極限。
-        
-        > **Current Focus:**
-        > * ⚡ **EDA Optimization**: Power/Ground Routing Algorithms.
-        > * 🤖 **Edge AI**: FPGA Deployment (Vitis) & Model Quantization.
-        > * 🧪 **Lab Status**: 🟢 Online | Conducting Experiments...
-        """
+        Content = """**Principal Investigator: WeiXuan You (游煒亘)**
+
+歡迎來到我的個人研發實驗室。
+這裡致力於將 **AI 演算法 (RL/LLM)** 與 **EDA/FPGA 硬體加速** 結合，探索效能優化的極限。
+
+> **Current Focus:**
+> * ⚡ **EDA Optimization**: Power/Ground Routing Algorithms.
+> * 🤖 **Edge AI**: FPGA Deployment (Vitis) & Model Quantization.
+> * 🧪 **Lab Status**: 🟢 Online | Conducting Experiments..."""
 
     # --- 2. 社群連結 ---
     [[params.socialIcons]]
@@ -59,13 +57,13 @@ buildExpired = false
         url = "https://github.com/WeiXuanYou"
     [[params.socialIcons]]
         name = "linkedin"
-        url = "https://linkedin.com/in/your-id" 
+        url = "https://www.linkedin.com/in/wei-xuan-you-0a67b71b7" 
     [[params.socialIcons]]
         name = "email"
-        url = "mailto:[email protected]"
+        url = "you20610@gmail.com:[email protected]"
     [[params.socialIcons]]
         name = "cv"
-        url = "/files/resume.pdf"
+        url = "/files/CV.pdf"
 
     # --- 3. 圖片顯示設定 ---
     [params.cover]

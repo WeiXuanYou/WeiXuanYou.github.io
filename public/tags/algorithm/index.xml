@@ -6,8 +6,15 @@
     <description>Recent content in Algorithm on WeiXuan&#39;s R&amp;D Lab</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 16 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[DevLog] Tuning A* Heuristic for Power Routing</title>
+      <link>http://localhost:1313/daily/2025-12-16/</link>
+      <pubDate>Tue, 16 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/daily/2025-12-16/</guid>
+      <description>Admissible heuristic is safe, but too slow. Trying to over-estimate today.</description>
+    </item>
     <item>
       <title>[DevLog] Tuning A* Heuristic for Power Routing</title>
       <link>http://localhost:1313/daily/2025-12-14-astar-heuristic/</link>
